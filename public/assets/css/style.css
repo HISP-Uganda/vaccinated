@@ -1,0 +1,226 @@
+#footer .fixed-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+.navbar-nav{
+	margin-left: auto
+}
+
+.navbar-brand img {
+   height: 55px;
+}
+
+.navbar-brand{
+	font-size: 28px;
+    text-transform: none;
+    font-weight: bold;
+    color: #26587b;
+}
+
+.content-area{
+  padding-top: 20px;
+}
+
+
+.content-head, tab-pane h1{
+  font-size: 24px;
+    color: #2b4f90;
+    margin-bottom: 20px;
+}
+
+.zandgar__wizard {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.zandgar__wizard .zandgar__step {
+  display: none;
+}
+.zandgar__wizard .zandgar__step.zandgar__step__active {
+  display: block;
+}
+
+.col-img {
+  /* https://unsplash.com/photos/yWwob8kwOCk */
+  background: scroll center url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.current-user{
+  float: right;
+}
+
+
+.sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  max-height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  transition: max-width 0.1s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidebar {
+      transition: none;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar {
+      width: 100%;
+      max-width: 260px;
+  }
+}
+.sidebar .nav {
+  white-space: nowrap;
+}
+.sidebar .nav-item {
+  margin-bottom: 0.2rem;
+}
+.sidebar .nav-item.active > .nav-link {
+  color: #d1d5db;
+  background-color: #2e3650;
+}
+.sidebar .nav-item .nav-link {
+  color: #d1d5db;
+  cursor: pointer;
+}
+.sidebar .nav-item .nav-link:hover {
+  color: #d1d5db;
+  background-color: #2e3650;
+}
+.sidebar .nav-link + .multi-level {
+  margin-top: 0.2rem;
+}
+.sidebar .nav-link {
+  font-size: 1rem;
+  vertical-align: middle;
+  padding: 0.55rem 0.75rem;
+  border-radius: 1rem;
+}
+.sidebar .nav-link .sidebar-icon {
+  margin-right: 0.5rem;
+  color: #fff;
+}
+.sidebar .nav-link .sidebar-icon span {
+  min-width: 22px;
+}
+.sidebar .nav-link .link-arrow {
+  font-size: 0.875rem;
+}
+.sidebar .nav-link[data-bs-toggle="collapse"][aria-expanded="true"] .link-arrow {
+  transform: rotate(90deg);
+  transition: all 0.2s ease;
+}
+.sidebar .nav-link.active {
+  color: #363c54;
+}
+.sidebar .multi-level .nav-link {
+  padding-left: 45px;
+}
+.sidebar .badge,
+.sidebar .link-arrow,
+.sidebar .notification-count,
+.sidebar .sidebar-text {
+  opacity: 1;
+}
+.sidebar .sidebar-text-contracted {
+  display: none;
+}
+.sidebar.contracted {
+  max-width: 95px;
+}
+.sidebar.contracted .badge,
+.sidebar.contracted .link-arrow,
+.sidebar.contracted .sidebar-text {
+  opacity: 0;
+}
+.sidebar.contracted .notification-count {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+}
+.sidebar.contracted .nav-item {
+  position: relative;
+}
+.sidebar.contracted .nav-item.active > .nav-link {
+  background-color: #363c54;
+  width: 44px;
+}
+.sidebar.contracted .nav-item .nav-link:hover {
+  background-color: #262b40;
+}
+.sidebar.contracted .sidebar-text-contracted {
+  display: inline;
+}
+.sidebar.contracted .multi-level .nav-link {
+  padding-left: 17px;
+}
+.sidebar.contracted .nav-item {
+  white-space: nowrap;
+}
+.sidebar.contracted .sidebar-icon {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sidebar.contracted + .content {
+      margin-left: 95px;
+  }
+}
+.sidebar-inner {
+  position: relative;
+  overflow-y: hidden;
+}
+.sidebar-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.user-card {
+  border-bottom: 0.0625rem solid #2e3650;
+}
+@media (max-width: 575.98px) {
+  .sidebar {
+      width: 100%;
+  }
+}
+.content {
+  overflow: visible;
+  padding: 0 1rem 0 1rem;
+  transition: all 0.3s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .content {
+      transition: none;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+      margin-left: 260px;
+  }
+}
+.sidebar-toggle {
+  font-size: 1.3rem;
+}
+.sidebar-toggle:focus,
+.sidebar-toggle:hover {
+  outline: 0;
+  box-shadow: none;
+  background: #d1d5db;
+}
